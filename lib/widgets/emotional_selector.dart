@@ -14,12 +14,12 @@ class _EmotionSelectorState extends State<EmotionSelector> {
   int selectedEmotion = -1;
 
   final List<Map<String, String>> emotions = [
-    {'image': 'assets/happy1.png', 'label': 'Радость'},
-    {'image': 'assets/fear1.png', 'label': 'Страх'},
-    {'image': 'assets/angry1.png', 'label': 'Бешенство'},
-    {'image': 'assets/sad1.png', 'label': 'Грусть'},
-    {'image': 'assets/strongs1.png', 'label': 'Сила'},
-    {'image': 'assets/rest1.png', 'label': 'Спокойствие'},
+    {'image': 'assets/happy.png', 'label': 'Радость'},
+    {'image': 'assets/fear.png', 'label': 'Страх'},
+    {'image': 'assets/angry.png', 'label': 'Бешенство'},
+    {'image': 'assets/sad.png', 'label': 'Грусть'},
+    {'image': 'assets/strongs.png', 'label': 'Сила'},
+    {'image': 'assets/rest.png', 'label': 'Спокойствие'},
   ];
 
   @override
@@ -72,11 +72,9 @@ class _EmotionSelectorState extends State<EmotionSelector> {
                         width: 90,
                         height:60,
                         decoration: const BoxDecoration(shape: BoxShape.circle),
-                        child: ClipOval(
-                          child: Image.asset(
-                            emotions[index]['image']!,
-                            fit: BoxFit.contain,
-                          ),
+                        child: Image.asset(
+                          emotions[index]['image']!,
+                          fit: BoxFit.contain,
                         ),
                       ),
                       Text(
