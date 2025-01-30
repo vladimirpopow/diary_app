@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class StatisticsPage extends StatefulWidget {
-  const StatisticsPage({super.key});
+class StatisticsTab extends StatefulWidget {
+  const StatisticsTab({super.key});
 
   @override
-  State<StatisticsPage> createState() => _StatisticsPageState();
+  State<StatisticsTab> createState() => _StatisticsTabState();
 }
 
-class _StatisticsPageState extends State<StatisticsPage> {
+class _StatisticsTabState extends State<StatisticsTab> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

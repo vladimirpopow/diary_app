@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
                 physics: NeverScrollableScrollPhysics(),
                 children: [
                   DiaryTab(),
-                  StatisticsPage(),
+                  StatisticsTab(),
                 ],
               ),
             ),
